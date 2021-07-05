@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/hf.css"/>
+    <script src="https://api.map.baidu.com/api?type=webgl&v=1.0&ak=jbwwhuXgndoRFeRLSnyT8lxw1QqcFto5"></script>
+    <style type="text/css">
+		.page-header{
+			padding: 40px 0;
+			margin: 0;
+			background-color: #f8f8f8
+		}
+    	#map{
+			height: 280px;
+			margin-bottom: 30px;
+		}
+		.list-group-item{
+			width: 100%;
+			border: none;
+		}
+		.list-group-item img{
+			width: 40px;
+			display: inline-block;
+			margin-right: 14px;
+		}
+		#content .container{
+			padding: 30px 0 0 0;
+		}
+    </style>
+</head>
+
+<body>
+
+   <nav class="navbar-default navbar">
+   	<div class="container-fluid">
+   	    <div class="navbar-header">
+   			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+   	    	<div class="navbar-brand">
+   	    	    <div class=""><img src="img/01.png" style="width: 20px; height: 20px;">复仇者联盟</div>
+   	    	</div>
+   	    </div>
+   		<div class="collapse navbar-collapse" id="topFixedNavbar1">
+   			<ul class="nav navbar-nav navbar-right">
+   			    <li><a href="home_page.html">首页</a></li>
+   			    <li><a href="listpage.html">新闻</a></li>
+   			    <li><a href="baidu.html">关于我们</a></li>
+   			</ul>
+   		</div>
+   	</div>
+   </nav>
+
+    <div id="content">
+		<h1 class="page-header text-center">关于我们</h1>
+        <div class="container">
+            <div class="row">
+                <div id="map" class="col-md-6 col-xs-12"></div>
+                <div id="info" class="col-md-6 col-xs-12">
+                    <p style="line-height: 28px;">复仇者联盟以拯救世界为已任。创始人为钢铁侠、雷神托尔、绿巨人、蚁人和黄蜂侠。从一开始复仇者联盟的成员名单便不断的变动，第二期绿巨人就离队，改由美国队长加入。不断更改的成员名单已成为复仇者联盟的特点，但一个主题从未变过，那就是专与单一超级英雄无法应付的敌人作战。
+                    </p>
+                    <ul class="list-group">
+						<li class="list-group-item">
+							
+						    <p><img src="./img/4-1.png" alt="">福州市仓山区万达广场B区</p>
+						</li>
+						<li class="list-group-item">
+							
+							<p><img src="./img/4-2.png" alt="">admin@example.com</p>
+						</li>
+						<li class="list-group-item">
+							
+							<p><img src="./img/4-3.png" alt="">400-123-4567</p>
+						</li>
+					</ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer">
+    	<div class="container">
+    	    <div class="row text-center">
+    	    <div id="div4-1" class="col-xs-3"><img src="img/4-1.png" class="img-responsive">
+    	        <div>福州闽江学院</div>
+    	    </div>
+    	    <div id="div4-1" class="col-xs-3"><img src="img/4-2.png" class="img-responsive">
+    	        <div>23123412@qq.com</div>
+    	    </div>
+    	    <div id="div4-1" class="col-xs-3"><img src="img/4-3.png" class="img-responsive">
+    	        <div>023-3456-7891</div>
+    	    </div>
+    	    <div id="div4-1" class="col-xs-3"><img src="img/4-4.png" class="img-responsive">
+    	        <div class="flor-font">扫一扫，加入联盟</div>
+    	    </div>
+    	    </div>
+    		<div class="modal-footer text-center">版权所有&copy;复仇者联盟</div>
+    	</div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var map = new BMapGL.Map('map');
+        map.centerAndZoom(new BMapGL.Point(119.173278, 26.0706), 12);
+        map.enableScrollWheelZoom(true);
+    </script>
+</body>
+
+</html>
