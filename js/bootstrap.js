@@ -2375,3 +2375,24 @@ if (typeof jQuery === 'undefined') {
   })
 
 }(jQuery);
+
+
+$(function(){
+	$("#x").click(function(){
+		 $(".hpanel").css('display','none')
+	})
+	$(".er").click(function(){
+		 $(".hpanel").css('display','block')
+	})
+	$(".hbtn").click(function(){
+		 $(".hpanel").css('display','none')
+	})
+})
+
+
+$(function() {
+  $('.hform').submit(function() {
+    console.log('通讯地址：'+$('input[name="email"]').val());
+	console.log('想说的话：'+ $('textarea').val());// etc.
+  });
+});
