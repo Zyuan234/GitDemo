@@ -10,6 +10,8 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/lazysizes/5.3.2/lazysizes-umd.js"></script>
+
     <title>列表页</title>
 	<style type="text/css">
 		.list li{
@@ -90,7 +92,7 @@
                   console.log(res.data);
                 for (let i = 0; i < 9; i++) {
                     let li = $('<li class="col-md-4"></li>');
-                     li.append(`<img width='300px' height='300px' src=${res.data.data.news[i].src}>`);
+                     li.append(`<img width='300px' height='300px' class='lazyload' data-src=${res.data.data.news[i].src} class='lazyload'>`);
                     console.log(res.data.data.news[i].title);
                     li.append(`<h3>${res.data.data.news[i].title}</h3>`)
                     li.append(`<span>${res.data.data.news[i].time}</span>`)
